@@ -1,0 +1,15 @@
+{
+  "name": "first-server",
+  "version": "1.0.0",
+  "description": "NodeJS from beginner to Advanced",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Mesaque Botelho Junior",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
