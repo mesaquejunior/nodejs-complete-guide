@@ -1,1 +1,1 @@
-This project aims to build a simple server with Node JS without any libraries.
+This project aims to build a server with Express JS without any libraries.

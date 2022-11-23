@@ -1,15 +1,24 @@
 {
-  "name": "first-server",
+  "name": "second-server",
   "version": "1.0.0",
-  "description": "NodeJS from beginner to Advanced",
-  "main": "app.js",
+  "description": "This project will be used for an introduction for expressjs",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon src/app.js"
   },
+  "keywords": [
+    "expressjs",
+    "javascript",
+    "nodejs"
+  ],
   "author": "Mesaque Botelho Junior",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
   }
 }
