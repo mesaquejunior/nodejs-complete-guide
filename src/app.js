@@ -1,22 +1,26 @@
-const express = require("express")
-const bodyParser = require("body-parser")
 const path = require("path")
-
-const adminData = require("./routes/admin")
-const shopRouter = require("./routes/shop")
 
 const rootDir = require("./utils/path")
 
+const express = require("express")
+const bodyParser = require("body-parser")
+
 const app = express()
+
+app.set("view engine", "pug")
+app.set("views", path.join(rootDir, "views"))
+
+const adminData = require("./routes/admin")
+const shopRoutes = require("./routes/shop")
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(rootDir, "..", "public")))
 
-app.use("/admin", adminData.router)
-app.use(shopRouter)
+app.use("/admin", adminData.routes)
+app.use(shopRoutes)
 
 app.use((req, res, next) => {
-  res.status(404).sendFile(path.join(rootDir, "views", "404.html"))
+  res.status(404).render("404", { pageTitle: "I'm sorry! :´(" })
 })
 
 app.listen(3000)
