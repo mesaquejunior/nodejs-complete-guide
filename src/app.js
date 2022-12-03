@@ -2,12 +2,19 @@ const path = require("path")
 
 const rootDir = require("./utils/path")
 
+
 const express = require("express")
 const bodyParser = require("body-parser")
+const { engine } = require('express-handlebars');
 
 const app = express()
 
-app.set("view engine", "pug")
+app.engine("hbs", engine({
+  layoutsDir: 'src/views/layouts/',
+  defaultLayout: 'main-layout',
+  extname: 'hbs'
+}))
+app.set("view engine", "hbs")
 app.set("views", path.join(rootDir, "views"))
 
 const adminData = require("./routes/admin")
