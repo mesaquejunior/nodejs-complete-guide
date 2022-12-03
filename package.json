@@ -1,0 +1,27 @@
+{
+  "name": "second-server",
+  "version": "1.0.0",
+  "description": "This project will be used for an introduction for expressjs",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "keywords": [
+    "expressjs",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Mesaque Botelho Junior",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "pug": "^3.0.2"
+  }
+}
