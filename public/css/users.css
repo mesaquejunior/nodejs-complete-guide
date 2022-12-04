@@ -1,0 +1,30 @@
+.user-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+}
+
+.user-item {
+    width: 20rem;
+    max-width: 95%;
+}
+
+.user__title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.user__list {
+    list-style: none;
+}
+
+.user__item {
+    display: block;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin: 0 400px 15px 400px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}

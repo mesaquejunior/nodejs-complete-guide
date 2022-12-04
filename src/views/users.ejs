@@ -1,0 +1,17 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="css/users.css">
+    <%- include('includes/navigation.ejs') %>
+        <main>
+            <% if (users.length> 0) { %>
+                <ul class="user__list">
+                    <% for (let user of users) { %>
+                        <li class="user__item">
+                            <%= user.name %>
+                        </li>
+                        <% } %>
+                </ul>
+                <% } else { %>
+                    <h1>No users found!</h1>
+                    <% } %>
+        </main>
+        <%- include('includes/end.ejs') %>
