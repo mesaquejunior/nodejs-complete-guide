@@ -4,9 +4,6 @@ exports.getAddProducts = (req, res, next) => {
   res.render("add-product", {
     pageTitle: "Adding new products",
     path: "/admin/add-product",
-    activeAddProduct: true,
-    formCSS: true,
-    productCSS: true,
   })
 }
 
@@ -22,9 +19,6 @@ exports.getProducts = (req, res, next) => {
       prods: products,
       pageTitle: "Shop",
       path: "/",
-      hasProducts: products.length > 0,
-      activeShop: true,
-      productCSS: true,
     })
   })
 }
